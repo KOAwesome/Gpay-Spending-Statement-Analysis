@@ -1,7 +1,7 @@
 # Gpay-Statement-Analysis
-GPay & ICICI Bank Statement Analyzer App
+GPay Statement Analyzer App
 This app will extract, process, and analyze transaction data from Google Pay (GPay) and ICICI Bank statements, helping users track spending, categorize expenses, and generate insights.
-
+Click here<href=https://koawesome.github.io/Gpay-Spending-Statement-Analysis/index.html> to see results.
 🚀 Features
 ✅ Extract transactions from GPay transaction history
 ✅ Auto-categorize expenses (Food, Shopping, Travel, Bills, etc.)
