@@ -15,7 +15,7 @@ This app will extract, process, and analyze transaction data from Google Pay (GP
 
 1️⃣ Extract Data from GPay Statements
 GPay exports are HTML files. We’ll extract transactions from HTML. I first converted HTML into single column csv file 
-this div tag had all the necessary info I needed content-cell mdl-cell mdl-cell--6-col mdl-typography--body-1 -- recieved or sent 
+this div tag had all the necessary info I needed `content-cell mdl-cell mdl-cell--6-col mdl-typography--body-1` -- `recieved or sent` 
 
 🔍 Step 1: Read HTML file to csv
 
