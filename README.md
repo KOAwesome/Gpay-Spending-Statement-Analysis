@@ -25,7 +25,10 @@ this div tag had all the necessary info I needed content-cell mdl-cell mdl-cell-
   
 2️⃣ Categorize Expenses Automatically
 We'll use keyword matching & AI (NLTK or OpenAI API) to categorize transactions.
+
 **Still to be done**
+
+
 3️⃣ Data Analysis & Insights
 We’ll analyze wrongly categorized and try to fix the classification.
 
