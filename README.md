@@ -26,21 +26,17 @@ this div tag had all the necessary info I needed content-cell mdl-cell mdl-cell-
 2️⃣ Categorize Expenses Automatically
 We'll use keyword matching & AI (NLTK or OpenAI API) to categorize transactions.
 
-**Still to be done**
-
-
 3️⃣ Data Analysis & Insights
 We’ll analyze wrongly categorized and try to fix the classification.
 
 Then we work on insights month-based, year-based .. etc.
 
-4️⃣ Web App with Streamlit
-
 🚀 Running the App
+  Download the takeout in googlepay https://takeout.google.com/ and select google pay. Then open activity.html and then supply here. 
 
 ✨ Future Enhancements
 ✅ AI-based anomaly detection (Flag unusual transactions) and AI Based learning
 ✅ Income vs. Expense analysis
 ✅ Budgeting & Alerts (Notify if exceeding a budget)
-
+✅ Web App with Streamlit
 Would you like me to help deploy this as a web app or refine it further? 🚀
