@@ -1,42 +1,54 @@
-# Gpay-Statement-Analysis
+GPay Statement Analysis
+
 GPay Statement Analyzer App
-This app will extract, process, and analyze transaction data from Google Pay (GPay) and ICICI Bank statements, helping users track spending, categorize expenses, and generate insights.
-Click here<href=https://koawesome.github.io/Gpay-Spending-Statement-Analysis/index.html> to see results.
-🚀 Features
-✅ Extract transactions from GPay transaction history
-✅ Auto-categorize expenses (Food, Shopping, Travel, Bills, etc.)
-✅ Generate spending insights with charts & trends
-✅ Detect anomalies (suspicious transactions, high spending)
-✅ Export reports (CSV, PDF)
 
-📌 Tech Stack
-🔹 Backend: Python, Spark
-🔹 Data Processing: Pandas
+This app extracts, processes, and analyzes transaction data from Google Pay (GPay) and ICICI Bank statements. It helps users track their spending, categorize expenses, and generate useful insights.
 
-1️⃣ Extract Data from GPay Statements
-GPay exports are HTML files. We’ll extract transactions from HTML. I first converted HTML into single column csv file 
-this div tag had all the necessary info I needed `content-cell mdl-cell mdl-cell--6-col mdl-typography--body-1` -- `recieved or sent` 
+Click here to view a sample analysis.
 
-🔍 Step 1: Read HTML file to csv
+Features
 
-🔍 Step 2: Read GPay Statement (CSV)
-  After that I loaded file into Data bricks(I am using community edition). Then started operating on the dataset.
-  First priorites were seperating the data.
-  
-2️⃣ Categorize Expenses Automatically
-We'll use keyword matching & AI (NLTK or OpenAI API) to categorize transactions.
+Extracts transactions from GPay transaction history
+Automatically categorizes expenses (e.g., Food, Shopping, Travel, Bills)
+Generates spending insights with charts and trends
+Detects anomalies like suspicious transactions or unusually high spending
+Allows exporting of reports in CSV and PDF formats
+Tech Stack
 
-3️⃣ Data Analysis & Insights
-We’ll analyze wrongly categorized and try to fix the classification.
+Backend: Python, Apache Spark
+Data Processing: Pandas
+How It Works
 
-Then we work on insights month-based, year-based .. etc.
+1. Extract Data from GPay Statements
+Google Pay exports are provided as HTML files. These files are parsed to extract transaction data.
+I first converted the HTML into a single-column CSV file. The div tag with the class:
 
-🚀 Running the App
-  Download the takeout in googlepay https://takeout.google.com/ and select google pay. Then open activity.html and then supply here. 
+content-cell mdl-cell mdl-cell--6-col mdl-typography--body-1
+contained the necessary transaction details like whether money was received or sent.
 
-✨ Future Enhancements
-✅ AI-based anomaly detection (Flag unusual transactions) and AI Based learning
-✅ Income vs. Expense analysis
-✅ Budgeting & Alerts (Notify if exceeding a budget)
-✅ Web App with Streamlit
-Would you like me to help deploy this as a web app or refine it further? 🚀
+Step 1: Convert HTML to CSV
+The HTML is parsed and the relevant text is extracted and saved as a CSV.
+
+Step 2: Read the CSV in Databricks
+After uploading the CSV to Databricks (Community Edition), I began separating and structuring the data to make it usable for analysis.
+
+2. Automatic Expense Categorization
+
+Expense categories are assigned using a keyword-matching approach. For better accuracy, NLP tools such as NLTK or OpenAI APIs can be integrated to classify transactions more intelligently.
+
+3. Data Analysis & Insights
+
+Misclassified transactions are reviewed and corrected. Further analysis is performed based on various time frames such as monthly or yearly spending trends.
+
+How to Use
+
+Go to Google Takeout
+Select Google Pay and download your transaction history
+Open the downloaded folder, locate My Activity.html
+Upload the file into the application for analysis
+Future Enhancements
+
+AI-based anomaly detection to flag unusual transactions
+Detailed income vs. expense summaries
+Budgeting tools and alert features (e.g., overspending notifications)
+Fully deployed web app using Streamlit for user interaction
